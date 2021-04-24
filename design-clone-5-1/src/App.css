@@ -1,0 +1,38 @@
+.App {
+  background-image: url("https://cdn.discordapp.com/attachments/794686145707507722/835573003685199882/header-bg.jpg");
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+}
+
+.image {
+  width: 100%;
+  height: 500px;
+}
+.container {
+  box-sizing: border-box;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button {
+  background-color: #fed136;
+  padding: 10px;
+  color: white;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  color: gray;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  color: gray;
+}
