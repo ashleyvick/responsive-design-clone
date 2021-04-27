@@ -6,6 +6,7 @@
   height: 50px;
   justify-content: space-around;
   padding: 1%;
+  align-items: center;
 }
 
 .list {
@@ -21,6 +22,10 @@
   color: white;
 }
 
+li:hover {
+  color: #fed136;
+}
+
 .start-icon {
   font-family: "Dancing Script", cursive;
   font-size: 30px;
@@ -29,21 +34,55 @@
 }
 
 .menu-button {
-  width: 40px;
+  width: 100px;
   height: 40px;
   display: none;
   position: absolute;
-  margin-right: 5%;
   right: 10px;
+  background-color: #fed136;
+  cursor: pointer;
+  border-radius: 9px;
+  margin-right: 5%;
+}
+
+.menu-button:hover {
+  border: 4px double black;
+}
+
+.hamburger {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 9px;
   background-color: #fed136;
 }
 
+menu {
+  width: 100vw;
+  height: 0vh;
+  margin-top: 300px;
+  background: rgb(35, 36, 36);
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  transition-property: height;
+  transition-duration: 1s;
+}
+
 .menu-open {
-  width: 300px;
+  height: 250px;
 }
 
 .menu-list {
-  display: none;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  overflow: hidden;
+  height: 200px;
+  margin-left: 150px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
 }
 
 @media (max-width: 1000px) {
@@ -52,5 +91,9 @@
   }
   .list {
     display: none;
+  }
+  .hamburger {
+    display: block;
+    margin-right: 0 auto;
   }
 }

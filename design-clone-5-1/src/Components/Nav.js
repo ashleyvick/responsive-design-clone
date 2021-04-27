@@ -10,7 +10,7 @@ class Nav extends Component {
   }
 
   handleClick = () => {
-      this.state ({menuOpen: !this.state.menuOpen}) 
+      this.setState ({menuOpen: !this.state.menuOpen}) 
   }
 
   render() {
@@ -27,14 +27,15 @@ class Nav extends Component {
             <li>TEAM</li>
             <li>CONTACT</li>
         </ul>
-
+        
+        
+        <button className= "menu-button" onClick={this.handleClick} >MENU</button>
         <img
-          className="menu-button"
-          onClick={this.state.handleClick}
+          className="hamburger"
           src="https://cdn.shopify.com/s/files/1/2384/0833/t/54/assets/hamburgerIconWhite3.png?v=16889458422340259745"
           alt="hamburger_menu"
         ></img>
-
+       
         <menu className={menuClass}>
         <ul className = "menu-list">
             <li>SERVICES</li>
