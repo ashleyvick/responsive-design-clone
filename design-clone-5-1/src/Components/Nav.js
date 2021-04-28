@@ -29,14 +29,15 @@ class Nav extends Component {
         </ul>
         
         
-        <button className= "menu-button" onClick={this.handleClick} >MENU</button>
+        <button className= "menu-button" onClick={this.handleClick} >MENU
         <img
           className="hamburger"
           src="https://cdn.shopify.com/s/files/1/2384/0833/t/54/assets/hamburgerIconWhite3.png?v=16889458422340259745"
           alt="hamburger_menu"
         ></img>
+        </button>
        
-        <menu className={menuClass}>
+        <menu className={menuClass} style={{overflow: 'hidden'}}>
         <ul className = "menu-list">
             <li>SERVICES</li>
             <li>PORTFOLIO</li>
